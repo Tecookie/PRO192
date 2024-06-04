@@ -22,21 +22,15 @@ public class part2 {
          System.out.println("Input the operator (+-*/)");
          sc = new Scanner(System.in);
          op = sc.nextLine();
-         if (op.equals("+"))
+         switch (op)
          {
+             case "+":
              System.out.println("the result of " + num1 + op + num2 + "=" + String.format("%.0f",num1 + num2));
-             
-         }  
-         if (op.equals("-"))
-         {
+             case "-":
              System.out.println("the result of " + num1 + op + num2 + "=" + String.format("%.0f", num1-num2));
-         }
-         if (op.equals("*"))
-         {
+             case "*":
              System.out.println("the result of " + num1 + op + num2 + "="+ String.format("%.0f",(num1*num2)));
-         }
-         if (op.equals("/"))
-         {
+             case "/":
              System.out.println("the result of " + num1 + op + num2 + "="+ String.format("%.2f",(num1/num2)));
          }
     }

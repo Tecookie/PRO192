@@ -28,7 +28,7 @@ public class part1 {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 System.out.print("\nm["+i+"]["+j+"]=");
-                matrixs[i][j] = sc.nextInt();
+               matrixs[i][j] = sc.nextInt();
                 sum = sum + matrixs[i][j];
             }
         }   
